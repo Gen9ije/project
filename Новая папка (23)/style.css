@@ -1,0 +1,239 @@
+
+
+.clear-btn {
+    position: absolute;
+    top:6%;
+    right: 35%;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #ff4c4c;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    transition: 0.3s;
+}
+.clear-btn:hover {
+    background: #cc0000;
+}
+
+
+body {
+    background-color: rgb(33, 40, 117);
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    
+}
+.user-card {
+    background-color: #bfbbbb;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #007BFF;
+    object-fit: cover;
+}
+
+.user-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.user-card p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+.user-card button {
+    background-color: #0026ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.user-card button:hover {
+    background-color: #0056b3;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #6b0000;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 20px ;
+
+}
+
+input, select {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.9);
+}
+
+body {
+    background: linear-gradient(to right, #141e30, #243b55);
+    font-family: 'Arial', sans-serif;
+    color: #686868;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.6s ease-in-out;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    animation: slideUp 1s ease-in-out;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input, select {
+    background: rgba(50, 50, 50, 0.8);
+    color: #b3b3b3;
+    border: 1px solid #555;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    background: rgba(70, 70, 70, 0.9);
+    transform: scale(1.08);
+    border-color: #777;
+}
+
+button {
+    background: linear-gradient(to right, #222, #444);
+    color: #d1d1d1;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+button:hover {
+    background: linear-gradient(to right, #333, #555);
+    transform: scale(1.1);
+    box-shadow: 0 6px 13px rgba(0, 0, 0, 0.9);
+} 
+
+ Specific styles for Create Profile and Search buttons
+button#create-profile {
+    background: linear-gradient(to right, #8b0000, #b22222);
+    color: white;
+    font-weight: bold;
+}
+
+button#create-profile:hover {
+    background: linear-gradient(to right, #a52a2a, #dc143c);
+    color: #fff;
+}
+
+button#search {
+    background: linear-gradient(to right, #003366, #0055a4);
+    color: white;
+    font-weight: bold;
+}
+
+button#search:hover {
+    background: linear-gradient(to right, #004080, #0066cc);
+    color: #fff;
+}
+
+.file-input {
+    background: rgba(50, 50, 50, 0.8);
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+
+}
+
+.file-input:hover {
+    background: rgba(70, 70, 70, 0.9);
+    transform: scale(1.05);
+}
+
+.user-list {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    animation: slideUp 1s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+button:active {
+    animation: pulse 0.2s;
+}
